@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>up1</title>
+</head>
+<body>
+    <script>
+        var array = [];
+        for(var i = 0; i < 10; i++){
+            array.push(Math.floor(Math.random() * 101));
+        }
+        document.write("<br> Osorterad " + array);
+        array.sort(function(a, b){return a - b});
+        document.write("<br> <br> Sorterad " + array);
+        function printArray() {
+            var x = array.toString();
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</body>
+</html>
